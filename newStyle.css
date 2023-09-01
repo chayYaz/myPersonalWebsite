@@ -1,0 +1,355 @@
+*{
+  margin: 0 auto;
+}
+.all-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap between projects */
+  padding: 50px;
+}
+.project {
+  position: relative;
+  width: 400px;
+  
+  margin: 0 auto;
+display:inline-block;
+}
+
+.project h3,
+.project p,rgb(255, 176, 5)
+/* .project a {
+  padding: 15px;
+  margin: 0;
+} */
+
+.project h3 {
+  font-size: 24px;
+}
+
+.project img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.project p {
+  font-size: 16px;
+}
+
+.project a {
+  font-size: 16px;
+  text-decoration: none;
+  color: blue;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+.cone {
+  width: 400px;
+   height: 220px;
+ margin: 0 auto;
+   border-radius: 12rem 12rem 0 0;
+   background-color: rgba(0, 0, 255, 0.32);
+ 
+}
+.blueBackGround {
+  background-color: rgba(0, 0, 255, 0.1); /* A slightly transparent blue background */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height:700px;
+  border: 1px solid #ccc; /* Border for the container */
+  margin: 20px auto; /* Center the container */
+}
+
+.blueBackGround h3 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.blueBackGround p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+
+
+.imageContainer {
+  text-align: center;
+  margin-top: auto;
+}
+
+.imageContainer img {
+  height: auto;
+  border-radius: 5px;
+    width: 100%;
+  height: auto;
+
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.leftLine,
+.midLine,
+.rightLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px; /* Width of the dividing lines */
+  height:276px;
+  background-color: white; /* Line color */
+}
+
+.leftLine {
+  left: 8.33%; /* Position the left line at 1/3 of the width */
+  transform: rotate(-37deg); /* Rotate the line by 30 degrees */
+  transform-origin: top left;
+}
+
+.midLine {
+  left: 50%; /* Position the middle line at the center */
+  height: 218px;;
+}
+
+.rightLine {
+  right: 8.33%;
+  transform: rotate(37deg);
+  transform-origin: top right;
+}
+.skillsList {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skillsList li {
+  font-size: 14px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 255, 0.32); /* Semi-transparent blue background */
+  color: #fff; /* White text color */
+  border-radius: 20px; /* Rounded border */
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: transparent; /* Transparent background */
+  border: none; /* Remove default border */
+  padding: 0; /* Remove default padding */
+}
+
+.navbar-nav {
+  display: inline; /* Display the navbar items in a line */
+}
+
+.navbar-nav .nav-link {
+  color: #000; /* Black text color */
+  text-decoration: none;
+  padding: 0.5rem 1rem; /* Equal padding on top and bottom, and horizontal padding */
+  display: inline-block; /* Display as inline block for equal sizing */
+  background-color: #fff; /* White background */
+  border: 2px solid #007bff; /* Dark blue border */
+  border-radius: 20px; /* Rounded border */
+  margin: 5px; /* Margin between navbar items */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+li.nav-item {
+  display: inline;
+}
+.navbar-nav .nav-link:hover {
+  background-color: #007bff; /* Dark blue background on hover */
+  color: #fff; /* White text color on hover */
+}
+
+
+/* Banner */
+#banner {
+  position: relative;
+  text-align: center;
+  color: #fff; /* Text color */
+}
+.banner-image {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Set the height of the banner image */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+  margin-top: -50px; /* Adjust this value to move the image up */
+  opacity: 1; /* Reduce the opacity of the image */
+}
+/* Add an overlay with transparent white background */
+.banner-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 0, 52, 0.534); /* Semi-transparent white */
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-size: 36px;
+}
+
+.banner-content p {
+  font-size: 18px;
+  color: #fff;
+}
+
+.banner-content .btn {
+  margin-top: 20px;
+}
+
+/* Styling for the About Me section */
+#about {
+  background-color: #f7f7f7;
+  padding: 60px 0;
+}
+#about .container{
+  width:80%;
+}
+.container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+}
+/* Styling for the Contact Me section */
+#contact {
+  background-color: #f2f2f2;
+  padding: 60px 0;
+}
+
+#contact .contactPart {
+  width:80%;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#contact li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+#contact a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#contact a:hover {
+  color: #0056b3;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  #contact h2 {
+    font-size: 2rem;
+  }
+  
+  #contact p {
+    font-size: 1rem;
+  }
+  
+  #contact li {
+    font-size: 1rem;
+  }
+}
+a{
+  color:inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+}
+#banner a:hover{
+  color:inherit;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 40px;
+}
+.projects-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 60px 0 30px 0;
+}
+
+.projects-description {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  width:80%;
+}
+
+
+
+
+
